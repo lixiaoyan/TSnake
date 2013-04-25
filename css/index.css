@@ -1,0 +1,67 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    outline: none;
+}
+body
+{
+    padding: 10px;
+    background-color: #000;
+}
+body,textarea,input,button,table,tr,td,th
+{
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
+a
+{
+    text-decoration: none;
+}
+a:link,a:visited,a:hover,a:active
+{
+    color: #fff;
+}
+ul,ol,li
+{
+    list-style: none;
+}
+textarea
+{
+    resize: none;
+}
+#main
+{
+    width: 952px;
+    height: 482px;
+    margin: 0 auto;
+}
+#game
+{
+    width: 642px;
+    height: 482px;
+    float: left;
+}
+#game-iframe
+{
+    width: 640px;
+    height: 480px;
+    border: 1px solid #fff;
+    display: block;
+}
+#weibo
+{
+    margin-left: 10px;
+    width: 300px;
+    height: 482px;
+    float: left;
+}
+#comment
+{
+    width: 952px;
+    margin: 10px auto 0 auto;
+}

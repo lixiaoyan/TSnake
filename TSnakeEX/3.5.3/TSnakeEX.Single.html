@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <meta name="keywords" content="TSnakeEX" />
+        <meta name="description" content="TSnakeEX" />
+        <meta name="author" content="IntPtr" />
+        <title>TSnakeEX</title>
+        <link type="text/css" rel="stylesheet" href="./css/TSnakeEX.css" />
+        <link type="text/css" rel="stylesheet" href="./css/TSnakeEX.Single.css" />
+        <script type="text/javascript" src="./js/TSnakeEX.js"></script>
+        <script type="text/javascript" src="./js/TSnakeEX.Single.js"></script>
+        <script type="text/javascript">
+            window.onload=function(){
+                if(TSnakeEX.test()){
+                    TSnakeEX.Single.init();
+                }else{
+                    window.open("./TSnakeEX.NoSupport.html","_self");
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <img src="./images/back.png" class="back" />
+        <div class="game" tabindex="0">
+            <div class="icons">
+                <img src="./images/setting.png" class="icon" />
+                <img src="./images/about.png" class="icon" />
+            </div>
+            <div class="container">
+                <canvas class="buffer" width="160" height="320"></canvas>
+                <canvas class="hold" width="40" height="40"></canvas>
+                <canvas class="next" width="64" height="64"></canvas>
+                <canvas class="main" width="160" height="320"></canvas>
+                <div class="timer" style="display: none;"></div>
+            </div>
+            <div class="progress">
+                <div class="progress-inner"></div>
+            </div>
+            <div class="console">
+                <pre class="console-pre"></pre>
+            </div>
+            <div class="tip">
+                <p>点击这里获取焦点。</p>
+                <p>Please click here to focus.</p>
+            </div>
+            <div class="start"></div>
+            <div class="setting" style="display: none;"></div>
+            <div class="info" style="display: none;">
+                <div class="info-inner">
+                    <h1 class="info-title"></h1>
+                    <div class="info-text"></div>
+                </div>
+                <div class="info-buttons">
+                    <button class="info-button">确定</button>
+                </div>
+            </div>
+            <div class="about" style="display: none;">
+                <h1>TSnakeEX</h1>
+                <hr />
+                <img class="logo" src="./images/logo.png" />
+                <hr />
+                <p>制作/Developer：</p>
+                <div class="indent">
+                    <p>IntPtr</p>
+                </div>
+                <hr />
+                <p>协作/Cooperator：</p>
+                <div class="indent">
+                    <p>Farter</p>
+                </div>
+                <hr />
+                <p>测试/Tester：</p>
+                <div class="indent">
+                    <p>Teatube</p>
+                    <p>JackYYF</p>
+                    <p>HeXian</p>
+                </div>
+                <hr />
+                <p>鸣谢/Acknowledgement：</p>
+                <div class="indent">
+                    <p>俄罗斯方块吧</p>
+                    <p>俄罗斯方块中文论坛</p>
+                </div>
+                <hr />
+                <div class="copyright">
+                    <p>Copyright &copy;2011-2013 IntPtr</p>
+                    <p>All rights reserved</p>
+                </div>
+            </div>
+        </div>
+        <div class="volume">
+            <img src="./images/volume.png" class="icon" />
+            <img src="./images/mute.png" class="icon" />
+        </div>
+        <div class="language"></div>
+        <div class="loading">
+            <div class="loading-inner">
+                <h1>加载中……</h1>
+                <h1>Loading...</h1>
+            </div>
+        </div>
+        <div class="mask" style="display: none;">
+            <div class="mask-inner">
+                <div class="mask-pointer"></div>
+                <div class="mask-tip">aaa<br />bbb</div>
+            </div>
+        </div>
+        <audio class="audio" loop="loop"></audio>
+    </body>
+</html>
