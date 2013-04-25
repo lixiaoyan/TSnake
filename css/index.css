@@ -36,15 +36,9 @@ textarea
 }
 #main
 {
-    width: 952px;
-    height: 482px;
-    margin: 0 auto;
-}
-#game
-{
     width: 642px;
     height: 482px;
-    float: left;
+    margin: 0 auto;
 }
 #game-iframe
 {
@@ -52,16 +46,4 @@ textarea
     height: 480px;
     border: 1px solid #fff;
     display: block;
-}
-#weibo
-{
-    margin-left: 10px;
-    width: 300px;
-    height: 482px;
-    float: left;
-}
-#comment
-{
-    width: 952px;
-    margin: 10px auto 0 auto;
 }
